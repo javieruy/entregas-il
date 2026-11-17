@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>כימיה בלי מעבדה</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* HUB DE ENTREGA: la única URL que recibe el comprador. Sin OTOs, sin contactos, noindex. */
+:root{--bg:#F4F6FB;--paper:#FFFFFF;--ink:#14213D;--ink-soft:#4A5873;--accent:#16306A;--accent-dark:#0E2147;--line:#DCE3F0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--ink)}
+body{font-family:'Heebo',-apple-system,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Rubik',Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.hero{background:linear-gradient(160deg,var(--accent-dark),var(--accent));color:var(--paper);padding:48px 0 64px;text-align:center}
+.hero .kicker{display:inline-block;border:1px solid rgba(255,255,255,.5);border-radius:99px;padding:5px 14px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:clamp(28px,6vw,48px);margin-bottom:10px}
+.hero p{font-size:18px;opacity:.93;max-width:640px;margin:0 auto}
+.stats{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:22px}
+.stats span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:8px 16px;font-weight:700;font-size:15px}
+.core{position:relative;margin:-36px auto 36px;background:var(--paper);border:2px solid var(--accent);border-radius:20px;padding:26px;display:grid;grid-template-columns:180px 1fr;gap:24px;align-items:center;box-shadow:0 18px 40px rgba(0,0,0,.10)}
+.core img{width:100%;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,.18);display:block}
+.core .ph{aspect-ratio:2/3;border-radius:10px;background:linear-gradient(160deg,var(--accent),var(--accent-dark))}
+.tag{display:inline-block;background:var(--accent);color:var(--paper);border-radius:99px;padding:4px 12px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.core h2{font-size:clamp(22px,4vw,32px);margin-bottom:8px}
+.core p{color:var(--ink-soft);margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 26px;border-radius:12px;background:var(--accent);color:var(--paper);font-weight:800;font-size:17px;text-decoration:none;box-shadow:0 4px 0 var(--accent-dark)}
+.btn:hover{filter:brightness(1.05)}
+.sec{margin:0 0 40px}
+.sec h2{font-size:clamp(22px,4vw,30px);margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px;text-decoration:none;transition:transform .12s,border-color .12s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.card .n{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.card h3{font-size:19px}
+.card p{color:var(--ink-soft);font-size:15px;flex:1}
+.card .go{font-weight:800;color:var(--accent-dark)}
+.card .btn{width:100%;min-height:46px;padding:10px 16px;font-size:16px}
+.acciones{display:inline-flex;flex-direction:column;align-items:stretch}
+.card .acciones{display:flex}
+.ver{display:block;margin-top:10px;font-weight:800;color:var(--accent-dark);text-decoration:none;text-align:center}
+.card .ver{margin-top:8px}
+.pasos{counter-reset:p;list-style:none;display:grid;gap:10px}
+.pasos li{counter-increment:p;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 58px;position:relative}
+.pasos li::before{content:counter(p);position:absolute;left:14px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:var(--paper);font-weight:800;display:flex;align-items:center;justify-content:center}
+.foot{text-align:center;color:var(--ink-soft);font-size:13px;padding:10px 0 40px}
+@media (max-width:640px){.core{grid-template-columns:1fr;text-align:center;padding:20px}.core img,.core .ph{max-width:170px;margin:0 auto}.btn{width:100%}.acciones{display:flex}}
+.btn,.btn.primary{background:#F5B70A;color:#0E2147;box-shadow:0 4px 0 #C38F00}.btn:hover{background:#FFD45C}.card .n,.tag{color:#B07D00}.tag{background:#F5B70A;color:#0E2147}</style>
+<style id="rtl">
+html[dir=rtl] body{text-align:right}
+html[dir=rtl] .hero,html[dir=rtl] .head,html[dir=rtl] .foot,html[dir=rtl] .top,html[dir=rtl] .ver{text-align:center}
+html[dir=rtl] .pasos li{padding:14px 58px 14px 16px}
+html[dir=rtl] .pasos li::before{left:auto;right:14px}
+html[dir=rtl] .kicker,html[dir=rtl] .tag,html[dir=rtl] .n{letter-spacing:0;text-transform:none}
+html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{letter-spacing:0}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">ברוכים הבאים · כימיה בלי מעבדה</span>
+    <h1>כימיה בלי מעבדה</h1>
+    <p>150 כרטיסי ניסוי להדפסה ב-5 ספרים, ועוד 6 בונוסים במתנה. הורידו, הדפיסו – והשיעור מוכן.</p>
+    <div class="stats"><span>150 ניסויים</span><span>5 ספרים</span><span>6 בונוסים במתנה</span></div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="sec" style="margin-top:32px"><h2>המוצר הראשי</h2><div class="grid"><div class="card"><span class="n">ספר 1</span><h3>כימיה בלי מעבדה · ספר 1 · כימיה כללית</h3><p>30 ניסויים, וכל אחד מהם הוא כרטיס ניסוי אחד להדפסה: חומרים, 6 שלבים מאוירים, הסבר מדעי, התוצאה הסופית והערת בטיחות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/u65tmwc6vz/1-kimia-klalit.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/u65tmwc6vz/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">ספר 2</span><h3>כימיה בלי מעבדה · ספר 2 · כימיה אורגנית וביוכימיה</h3><p>30 ניסויים, וכל אחד מהם הוא כרטיס ניסוי אחד להדפסה: חומרים, 6 שלבים מאוירים, הסבר מדעי, התוצאה הסופית והערת בטיחות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/qryvypu8k3/2-kimia-organit-ubiokimia.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/qryvypu8k3/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">ספר 3</span><h3>כימיה בלי מעבדה · ספר 3 · חומצות, בסיסים ומתכות</h3><p>30 ניסויים, וכל אחד מהם הוא כרטיס ניסוי אחד להדפסה: חומרים, 6 שלבים מאוירים, הסבר מדעי, התוצאה הסופית והערת בטיחות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/bb1c9tejw5/3-chumtzot-bsisim-umatachot.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/bb1c9tejw5/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">ספר 4</span><h3>כימיה בלי מעבדה · ספר 4 · כימיה פיזיקלית</h3><p>30 ניסויים, וכל אחד מהם הוא כרטיס ניסוי אחד להדפסה: חומרים, 6 שלבים מאוירים, הסבר מדעי, התוצאה הסופית והערת בטיחות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/3zxunr604m/4-kimia-fizikalit.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/3zxunr604m/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">ספר 5</span><h3>כימיה בלי מעבדה · ספר 5 · כימיה סביבתית</h3><p>30 ניסויים, וכל אחד מהם הוא כרטיס ניסוי אחד להדפסה: חומרים, 6 שלבים מאוירים, הסבר מדעי, התוצאה הסופית והערת בטיחות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/8wfzjoibzb/5-kimia-svivatit.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/8wfzjoibzb/" target="_blank" rel="noopener">פתחו ←</a></div></div></div></section>
+  <section class="sec"><h2>6 בונוסים במתנה</h2><div class="grid"><div class="card"><span class="n">בונוס 1</span><h3>ערכה ליריד מדע: תכננו, הציגו, נצחו</h3><p>לוח זמנים ל-4 שבועות, 10 פרויקטים מרשימים, תכנון הפוסטר, כיתובים וקריטריונים לשיפוט.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/h5qr3qjrsl/bonus-1-ercha-leyarid-mada.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/h5qr3qjrsl/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">בונוס 2</span><h3>מדריך בטיחות במעבדה לכיתה + טופס אישור הורים</h3><p>נהלים לפי סוג הניסוי, רשימת בדיקה לפני הניסוי ותבנית של טופס אישור.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/192y8avdq4/bonus-2-madrich-betichut.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/192y8avdq4/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">בונוס 3</span><h3>טבלה מחזורית מאוירת + 12 אינפוגרפיקות לכיתה</h3><p>טבלה מחזורית בגודל פוסטר עם שימושים מחיי היום-יום, ועוד 12 פוסטרים לקירות שלכם.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/rce65eeemc/bonus-3-tavla-machzorit-infografikot.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/rce65eeemc/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">בונוס 4</span><h3>תוכנית עבודה שנתית בכימיה, PDF + Word לעריכה</h3><p>36 שבועות, ניסוי אחד בכל שבוע. PDF + קובץ Word לעריכה.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/36g1dvpdt3/bonus-4-tochnit-shnatit-kimia.pdf" download>⬇ הורידו את ה-PDF</a><a class="btn" style="margin-top:8px" href="../../kimia-bli-maabada/36g1dvpdt3/bonus-4-tochnit-shnatit-kimia.docx" download>⬇ הורידו את קובץ ה-Word</a><a class="ver" href="../../kimia-bli-maabada/36g1dvpdt3/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">בונוס 5</span><h3>דפי הערכה ומחוונים לשיעורים מעשיים</h3><p>דפי תצפית, תבנית &quot;טענה–ראיה–נימוק&quot;, מחוון בן 4 רמות, רשימת בדיקה קבוצתית וכרטיסי יציאה.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/a9rxfywhx2/bonus-5-dapei-haaracha.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/a9rxfywhx2/" target="_blank" rel="noopener">פתחו ←</a></div></div><div class="card"><span class="n">בונוס 6</span><h3>100 כרטיסי חזרה בכימיה</h3><p>100 כרטיסים לגזירה, 4 בכל עמוד: העיקר של כל נושא, הנוסחה או המשוואה המרכזית, ודבר אחד שתלמידים שוכחים לעיתים קרובות.</p><div class="acciones"><a class="btn" href="../../kimia-bli-maabada/ez7dv5jmru/kimia-kartisei-chazara.pdf" download>⬇ הורידו את ה-PDF</a><a class="ver" href="../../kimia-bli-maabada/ez7dv5jmru/" target="_blank" rel="noopener">פתחו ←</a></div></div></div></section>
+  <section class="sec"><h2>הצעד הבא</h2><ol class="pasos"><li>הורידו את 5 הספרים ואת 6 הבונוסים למחשב או לטלפון.</li><li>בחרו כרטיס ניסוי לשיעור הבא שלכם: בתוכן העניינים של כל ספר תמצאו את הניסויים לפי רמה וזמן.</li><li>קראו את הערת הבטיחות שבכרטיס ועברו על רשימת הבדיקה לפני הניסוי שבבונוס 2.</li><li>הכניסו את התוכנית השנתית שלכם לקובץ ה-Word של בונוס 4, והעריכו את התלמידים בעזרת דפי ההערכה של בונוס 5.</li><li>השתמשו בכרטיסי החזרה של בונוס 6 בתחילת השיעור או בסופו, ולפני מבחנים.</li></ol></section>
+  <p class="foot">לשימוש אישי ולשיעורים שלכם בלבד. אסור למכור או להפיץ את החומרים.</p>
+</main>
+</body>
+</html>
